@@ -1,0 +1,12 @@
+If you agree to change Xfce theme to vanilla, your previous theme
+will be saved into folder /home/dho/.config/xfce4.20220801-09:51:28
+
+To restore the previous theme:
+     - remove folder /home/dho/.config/xfce4
+     - rename /home/dho/.config/xfce4.20220801-09:51:28 into /home/dho/.config/xfce4
+
+(Note: this info is stored into file /home/dho/.config/EOS-xfce-theme.log).
+
+Reboot is required for the theme change to take effect.
+
+Accept theme change and reboot now?

@@ -1,0 +1,11 @@
+[Default Applications]
+x-scheme-handler/postman=Postman.desktop
+x-scheme-handler/msteams=teams.desktop
+
+[Added Associations]
+application/sql=visual-studio-code.desktop;
+text/plain=xed.desktop;
+application/wps-office.docx=wps-office-wps.desktop;firefox.desktop;
+inode/directory=visual-studio-code.desktop;
+application/vnd.oasis.opendocument.spreadsheet=wps-office-et.desktop;firefox.desktop;
+text/csv=wps-office-et.desktop;

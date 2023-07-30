@@ -1,0 +1,200 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "Fira Code", "Noto Fonts Emoji", "Font Awesome 6 Free";
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 2px;
+  padding-right: 5px;
+  min-height: 0;
+}
+
+window#waybar {
+  background-color: rgba(66, 66, 66, 0.4);
+  opacity: 1;
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+tooltip {
+  background: rgba(20, 20, 20, 0.93);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+  border-radius: 8px;
+}
+
+#workspaces button {
+  padding: 0 2px;
+  background-color: transparent;
+  color: #555555;
+  opacity: 0.85;
+  font-weight: bold;
+}
+
+#workspaces button:hover {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inherit;
+  color: #ffffff;
+}
+
+#workspaces button.focused {
+  color: #ffffff;
+}
+
+#workspaces button.urgent {
+  background-color: #eb4d4b;
+}
+
+#mode {
+  background-color: #64727d;
+  border-bottom: 3px solid #ffffff;
+  opacity: 0.85;
+}
+
+#clock,
+#battery,
+#bluetooth,
+#upower,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#mpd,
+#clock.backup {
+  background-color: rgba(30, 30, 30, 0.7);
+}
+
+#clock {
+  color: #ffffff;
+  background-color: rgba(66, 66, 66, 0.0);
+  opacity: 1.0;
+  font-weight: bold;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-right: 8px;
+  margin-left: 10px;
+  border-radius: 12px;
+}
+
+#battery {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+#battery.charging {
+  color: #fdd835;
+}
+
+@keyframes blink {
+  to {
+    color: transparent;
+  }
+}
+
+#battery.critical:not(.charging) {
+  color: #f53c3c;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+label:focus {
+  background-color: #000000;
+}
+
+#network {
+  background-color: transparent;
+}
+
+#network.disconnected {
+  background-color: #f53c3c;
+}
+
+#pulseaudio {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+#custom-media {
+  min-width: 100px;
+  opacity: 0.8;
+}
+
+#custom-media.custom-spotify {
+  opacity: 0.8;
+}
+
+#custom-media.custom-vlc {
+  background-color: #ffa000;
+  opacity: 0.8;
+}
+
+#custom-weather {
+  min-width: 25px;
+}
+
+#custom-caps_status {
+  background-color: transparent;
+  border-bottom: 2px solid #ff1744;
+}
+
+#custom-github {
+  border-bottom: 2px solid #039be5;
+}
+
+#custom-update {
+  border-bottom: 2px solid #4caf50;
+}
+
+#custom-neomutt {
+  border-bottom: 2px solid #f0932b;
+}
+
+#custom-pomo {
+  border-bottom: 2px solid #bbbbbb;
+}
+
+#custom-screenrecord {
+  color: #ff1744;
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#custom-upower_batterycharging {
+  color: #fdd835;
+}
+
+#custom-upower_battery.low {
+  color: #f53c3c;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#custom-upower_battery.critical {
+  color: #f53c3c;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#tray {
+  background-color: transparent;
+}
+
+#upower.charging {
+  color: #fdd835;
+}
